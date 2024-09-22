@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# LLM方法论大师
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这是一个使用OpenRouter API来生成方法论洞察的React应用。
 
-## Available Scripts
+## 设置
 
-In the project directory, you can run:
+要运行这个项目,您需要设置OpenRouter API密钥。请按照以下步骤操作:
+
+1. 在项目根目录创建一个名为`.env`的文件。
+
+2. 在`.env`文件中添加以下内容:
+
+   REACT_APP_OPENROUTER_API_KEY=您的OpenRouter_API密钥
+
+   请将"您的OpenRouter_API密钥"替换为您实际的OpenRouter API密钥。
+
+3. 保存`.env`文件。
+
+
+## 安装依赖
+
+在运行项目之前，请确保安装所有必要的依赖。按照以下步骤操作：
+
+1. 确保您的系统中已安装Node.js（推荐版本14.0.0或更高）。
+
+2. 在项目根目录打开终端，运行以下命令安装所有依赖：
+
+   ```
+   npm install
+   ```
+
+   这将安装`package.json`文件中列出的所有依赖，包括但不限于：
+   - React
+   - axios
+   - tailwindcss
+   - 其他必要的开发依赖
+
+3. 安装完成后，您就可以按照上面的"运行项目"部分的说明来启动应用了。
+
+注意：如果在安装或运行过程中遇到任何问题，请确保您的Node.js和npm版本是最新的，或者与项目要求的版本相匹配。
+
+## 运行项目
+
+设置好API密钥后,您可以按照以下步骤运行项目:
+
+1. 打开终端,进入项目目录。
+
+2. 运行以下命令安装依赖:
+
+   ```
+   npm install
+   ```
+
+3. 启动开发服务器:
+
+   ```
+   npm start
+   ```
+
+4. 在浏览器中打开 `http://localhost:3000` 查看应用。
+
+## 使用说明
+
+1. 在应用界面上,您可以从下拉菜单中选择想要使用的模型(Claude 3.5 Sonnet、O1-mini或O1-preview)。
+
+2. 在输入框中输入您想要获取洞察的主题或问题。
+
+3. 点击"获取洞察"按钮,等待应用生成方法论洞察。
+
+4. 生成的洞察将以SVG格式显示,您可以点击"下载结果"按钮保存结果。
+
+## 注意事项
+
+- 请确保您有足够的API使用额度。
+- 不同的模型可能会产生不同的结果和响应时间。
+- 请遵守OpenRouter的使用条款和政策。
+
+如果您在使用过程中遇到任何问题,请查看OpenRouter的官方文档或联系支持团队。
+
+在项目目录中,你可以运行:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+以开发模式运行应用程序。\
+打开 [http://localhost:3000](http://localhost:3000) 在浏览器中查看。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+当你进行更改时,页面将重新加载。\
+你也可能在控制台中看到任何 lint 错误。
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
